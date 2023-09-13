@@ -4,17 +4,19 @@ import SkizaTune from './SkizaTunes';
 
 const Home = () => {
   const skizaTunesData = [
-     {
-       title: "Konon",
-       skizaCode: "1234567",
-       price: "KES 10",
-       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShKBYj9MVNJsjFgktPPqeJqRy1SKsQjL1zaQ&usqp=CAU",
-     },
+    {
+      title: "Konon",
+      skizaCode: "1234567",
+      price: "KES 10",
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShKBYj9MVNJsjFgktPPqeJqRy1SKsQjL1zaQ&usqp=CAU",
+      audioUrl: "https://example.com/audio1.mp3", // Replace with actual audio URL
+    },
     {
       title: "ex",
       skizaCode: "7654321",
       price: "KES 15",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEsyVBRhEW5O03qsUTjuJCJlolhlXYTI144w&usqp=CAU",
+      audioUrl: "https://example.com/audio2.mp3", // Replace with actual audio URL
     },
   ];
 
@@ -28,7 +30,6 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      
       <h1>
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1sWCdWK16qoesaNc-GSv0Wqv6Q9AlxQeI9g&usqp=CAU"
@@ -49,6 +50,7 @@ const Home = () => {
             skizaCode={tune.skizaCode}
             price={tune.price}
             imageUrl={tune.imageUrl}
+            audioUrl={tune.audioUrl}
           />
         ))}
       </div>
